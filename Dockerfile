@@ -21,7 +21,7 @@ ENV PATH=$PATH:$MVN_HOME/bin
 #
 # Install Apache Druid binary and docker entrypoint from specified release.
 #
-ARG DRUID_VERSION=0.23.0
+ARG DRUID_VERSION=25.0.0
 ADD https://dlcdn.apache.org/druid/${DRUID_VERSION}/apache-druid-${DRUID_VERSION}-bin.tar.gz /tmp
 ADD https://raw.githubusercontent.com/apache/druid/${DRUID_VERSION}/distribution/docker/druid.sh /druid.sh
 RUN \
